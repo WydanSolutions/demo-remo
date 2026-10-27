@@ -635,6 +635,9 @@ button.chip:hover{background:var(--prim-suave);color:var(--prim)}
 .hb-b{height:12px;background:var(--fondo-2);border-radius:8px;overflow:hidden;display:flex}
 .hb-b i{display:block;height:100%;background:var(--prim);border-radius:8px}
 .hb-b.apilada i{border-radius:0}
+/* el semáforo de cada grupo: los colores le ganan al violeta de las barras comunes */
+.hb-b.apilada i.sem-ok{background:var(--verde)} .hb-b.apilada i.sem-baixo{background:var(--amarillo-vivo)}
+.hb-b.apilada i.sem-critico{background:var(--rojo)} .hb-b.apilada i.sem-zerado{background:#7E1D16}
 .hb-v{font-weight:800;min-width:72px;text-align:right}
 .abc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .abc-c{display:flex;gap:12px;padding:14px;border-radius:14px;background:var(--fondo)}
